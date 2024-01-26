@@ -252,8 +252,8 @@ function Producto(nombre, precio, stock){
     }
 }
 
-const PRODUCTO_UNO = new Producto("ThankYou_Albúm", 800, 2);
-const PRODUCTO_DOS = new Producto("TakinItBack_Albúm", 3400, 2);
+const PRODUCTO_UNO = new Producto("ThankYou_Albúm", 34000, 2);
+const PRODUCTO_DOS = new Producto("TakinItBack_Albúm", 27500, 2);
 
 
 console.log(PRODUCTO_UNO);
