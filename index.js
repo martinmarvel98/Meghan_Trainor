@@ -81,11 +81,10 @@ if ((nombreIngresadoo !="") && ((nombreIngresadoo == "MEGHAN") || (nombreIngresa
 */
 
 //CICLOS E ITERACIONES
-/*
+
 for (let i = 0; i < 4; i ++) {
     alert (i);
 }
-*/
 
 /*
 const NUMERO =5;
