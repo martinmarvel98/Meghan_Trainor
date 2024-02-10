@@ -52,19 +52,11 @@ a{
 .album{
     width: 350px;
     height: 350px;
-    padding: 10px;
+    padding: 30px;
     display: block;
 }
 
-.video{
-    height: 355px;
-    width: 50%;
-    display: block;
-    padding: 10px;
-    padding-left: 140px;
-}
-
-.primero, .segundo, .tercero, .cuarto, .quinto, .sexto{
+.fila1, .fila2{
     display: flex;
 }
 
