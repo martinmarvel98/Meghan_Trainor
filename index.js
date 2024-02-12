@@ -817,4 +817,55 @@ let fechaEspecifica = new Date(2022,7,16);
 console.log(fechaEspecifica);
 
 let anio = fechaActual.getFullYear();
-console.log(anio);
+let mes = fechaActual.getMonth();
+let dia = fechaActual.getDate();
+let hora = fechaActual.getHours();
+let minutos = fechaActual.getMinutes();
+let segundos = fechaActual.getSeconds();
+let milisegundos = fechaActual.getMilliseconds();
+console.log(anio, mes, dia, hora, minutos, segundos, milisegundos);
+
+function programarTarea(){
+    let descripcionTarea = prompt("Ingresar tu tarea");
+    let horaTarea = parseInt(prompt("Ingresar la hora"))
+    if(isNaN(horaTarea) || horaTarea < 0 || horaTarea >= 24){
+        console.log("Hora no valida, ingresar otra")
+        return;
+    }
+
+    let minutosTarea = parseInt(prompt("Ingresar los minutos"))
+    if(isNaN(minutosTarea) || minutosTarea < 0 || minutosTarea >= 60){
+        console.log("Ingresa minutos validos")
+        return;
+    }
+
+    let fechaTarea = new Date();
+    fechaTarea.setHours(horaTarea, minutosTarea, 0, 0);
+
+    let tiempoRestante = fechaTarea.getTime() - new Date().getTime();
+
+    setTimeout(function(){
+        console.log(`es hora de la tarea ${descripcionTarea}`)
+    },tiempoRestante);
+    
+    console.log(`tarea programada: ${descripcionTarea} a las ${horaTarea},${minutosTarea}`)
+}
+
+programarTarea();
+
+//DOM
+const pId = document.getElementById('pId');
+console.log(pId);
+
+const pClass = document.getElementsByClassName('pClass');
+console.log(pClass);
+
+const li = document.getElementsByTagName('li');
+console.log(li);
+
+const queryId = document.querySelector('#queryid');
+console.log(queryId);
+
+const h1Elementos = document.getElementById('hElementos');
+h1Elementos.innerText = "MEGHAN TRAINOR";
+console.log(h1Elementos)
