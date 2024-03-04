@@ -32,17 +32,6 @@ if (unColor == "Rosa"){
     console.log("El color NO es Rosa");
 }
 
-/*
-let nombreUsuario = prompt("Ingresar nombre de usuario");
-
-if (nombreUsuario == "") {
-    alert("No ingresaste el nombre de usuario");
-}
-else{
-    alert("Nombre de usuario ingresado " + nombreUsuario);
-}
-*/
-
 //&&
 let nombreIngresado = prompt("Ingresar nombre");
 let apellidoIngresado = prompt("Ingresar apellido");
@@ -62,71 +51,6 @@ if ((album == "TITLE") || (album == "Title")) {
     alert("El albúm ingresado NO ES Title")
 }
 
-//&& y ||
-/*let nombreIngresado = prompt("Ingresar nombre");
-if ((nombreIngresado !="") && (nombreIngresado == "MEGHAN") || (nombreIngresado == "Meghan")){
-    alert("Hola Meghan");
-}else {
-    alert("Error: Ingresar nombre valido");
-}
-*/
-
-/*
-let nombreIngresadoo = prompt("Ingresar nombre");
-if ((nombreIngresadoo !="") && ((nombreIngresadoo == "MEGHAN") || (nombreIngresadoo == "Meghan"))){
-    alert("Hola Meghan");
-}else {
-    alert("Error: Ingresar nombre valido");
-}
-*/
-
-//CICLOS E ITERACIONES
-/*
-for (let i = 0; i < 4; i ++) {
-    alert (i);
-}
-*/
-
-/*
-const NUMERO =5;
-for (let i =0; i <=10; i ++){
-    const RESULTADO = NUMERO * i;
-    console.log(NUMERO + " x " + i + "=" +RESULTADO);
-}
-*/
-
-/*
-//turnos
-for (let i = 1; i <= 5; i ++) {
-    let ingresarNombre = prompt("Ingresar nombre");
-    alert(" Turno Nª "+i+" Nombre: "+ingresarNombre);
-}
-
-//break
-for (let i = 1; i <= 7; i ++) {
-    if(i == 5){
-        break;
-    }
-    alert(i);
-}
-//continue
-for (let i = 1; i <= 7; i ++) {
-    if(i == 5){
-        continue;
-    }
-    alert(i);
-}
-*/
-
-//while ESC
-/*
-let entrada = prompt("Ingresar un dato");
-while(entrada != "ESC"){
-    alert("El usuario ingresó "+ entrada);
-    entrada = prompt("Ingresar otro dato");
-}
-*/
-
 //FUNCIONES
 function saludar() {
     console.log("¡Hola fan de Meghan Trainor!");
@@ -138,14 +62,6 @@ saludar ();
 let cancionIngresada = prompt("Ingresar canción")
 alert("La canción ingresada es " + cancionIngresada)
 
-/*
-//si queremos repetir 2 veces, copiar y pegar
-cancionIngresada = prompt("Ingresar canción")
-alert("La canción ingresada es " + cancionIngresada)
-cancionIngresada = prompt("Ingresar canción")
-alert("La canción ingresada es " + cancionIngresada)
-*/
-
 function solicitarNombre(){
     let cancionIngresada   = prompt("Ingresar canción")
     alert("La canción ingresada es " + cancionIngresada)
@@ -156,30 +72,6 @@ function saludarPersona (nombre){
 }
 
 saludarPersona("Meghan");
-
-/*
-//VARIABLE LOCAL
-function ingresarNombre (){
-    let ingresoDeNombre = prompt("Ingresar nombre:");
-    console.log("El nombre del sujeto es: " + ingresoDeNombre);
-}
-
-ingresarNombre();
-//ingresarNombre();
-*/
-
-/*
-//VARIABLE GLOBAL
-let ingresoDeNombre = prompt("Ingresar nombre:");
-let ingresoDeApellido = prompt("Ingresar apellido:");
-let ingresoDeEdad = parseInt(prompt("Ingresar edad"));
-
-function ingresarDatos (nombre, apellido, edad){
-    console.log("El nombre del sujeto es: " + nombre + " El apellido es: " + apellido + " Tiene " + edad + "años");
-}
-
-ingresarDatos(ingresoDeNombre, ingresoDeApellido, ingresoDeEdad);
-*/
 
 function comprobarEdad(){
     const EDAD = parseInt(prompt("Ingresar edad"));
@@ -287,39 +179,6 @@ let resultado = numeros [1] + numeros [2]
 console.log(resultado) //5
 
 
-//Recorrido del Array
-/*
-const numeros = [1, 2, 3, 4, 5];
-for (let index = 0; index < 5; index++) {
-    alert(numeros[index]);
-}
-*/
-
-//Length
-/*
-const miArray = ["marca", 3, "palabra"];
-console.log(miArray.length); //imprime 3
-
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8]
-for (let i = 0; i < numeros.length; i++) {
-    alert(numeros[i]);
-}
-*/
-
-//Agregar elementos
-/*
-const miArray = ["marca", 3, "palabra"]
-miArray.push('otro elemento')
-console.log(miArray.length) //4
-console.log(miArray)
-
-//otra variante
-
-const miArray = ["marca", 3, "palabra"]
-miArray.unshift('otro elemento')
-console.log(miArray)
-*/
-
 //QUITAR ELEMENTOS
 //POP Y SHIFT
 const canciones = ["Wave", "All The Ways", "Me Too", "Dear Future Husband"]
@@ -381,23 +240,6 @@ console.log(artistas.includes("Madonna"))
 artistas.reverse()
 console.log(artistas)
 
-
-//Arrays de objectos
-/*
-const objecto1 = {id: 1, producto: "Arroz"};
-const array = [objecto1, {id: 2, producto: "Fideo"}];
-array.push({id: 3, producto: "Pan"});
-
-const productos = [{ id: 1, producto: "Arroz"},
-{ id: 2, producto: "Fideos"},
-{ id: 3, producto: "Pan"}];
-
-for (const producto of productos) {
-    console.log(producto.id);
-    console.log(producto.producto);
-}
-*/
-
 //ARRAYS DE LA CLASE
 
 let productos = ["NO", "Me Too", "Wave", "Made You Look"]; //strings
@@ -424,196 +266,6 @@ console.log(productos[3]);
 
 console.log(USUARIOS)
 console.log(USUARIOS[1]);
-
-//RECORRIDO
-//let productos = ["arroz", "banana", "fideos", "gaseosa"];
-/*
-for (let i = 0; i < 4; i++){
-    console.log(productos[i]);
-}
-*/
-//LENGTH
-/*
-let cantidadDeProductos = productos.length;
-console.log("La cantidad de productos que posee el Array es: " + cantidadDeProductos)
-*/
-/*
-let texto = "MundoCoder";
-let LongitudTexto = texto.length
-console.log(LongitudTexto);
-*/
-//PUSH
-/*
-let numero = [1, 2, 3];
-numero.push("Scarlet Witch");
-console.log(numero);
-*/
-
-//POP
-/*
-let numero = [1, 2, 3];
-let actualizarNumero = numero.pop();
-console.log(actualizarNumero)
-console.log(numero)
-*/
-
-//SHIFT
-/*
-let numero = [1, 2, 3, 4, 5];
-let actualizarNumero = numero.shift();
-console.log(actualizarNumero)
-console.log(numero)
-*/
-
-//SPLICE
-//indice, cantidad, el tipo de dato
-/*
-let colores = ["Rojo", "Naranja", "Amarillo"];
-colores.splice(1, 2, "Azul", "Morado");
-console.log(colores);
-*/
-
-//JOIN
-/*
-let colores = ["Rojo", "Naranja", "Amarillo"];
-let stringeColores = colores.join(" ");
-console.log(stringeColores);
-*/
-
-//CONCAT
-/*
-let autos = ["Honda", "Toyota", "Nissan"];
-let masAutos = autos.concat(["Liffa", "Cherry"]);
-console.log(masAutos);
-*/
-
-//SLICE
-/*
-let arrayNumero = [1, 2, 3, 4, 5];
-let parteDelArray = arrayNumero.slice(1, 4);
-console.log(parteDelArray);
-
-const nombres = ["Storm", "Wolverine", "Cyclope", "Jean Grey", "Scarlet Witch"];
-const masculinos = nombres.slice(1, 5);
-console.log(masculinos)
-*/
-
-//IndexOf
-/*
-let fruta = ["banana", "manzana", "frutilla", "naranja", "manzana"];
-let indice = fruta.indexOf("manzana");
-console.log(indice);
-*/
-
-//Includes
-/*
-let nombres = ["Jubilee", "Rogue", "Ice Man", "Professor X", "Bishop"];
-
-console.log(nombres.includes("Jubilee"))
-console.log(nombres.includes("Ice Man"))
-console.log(nombres.includes("Elektra"))
-console.log(nombres.includes("Scarlet Witch"))
-console.log(nombres.includes("Bishop"))
-*/
-
-//ARRAYS CON OBJECTOS
-/*
-const PERSONAS = [
-    {nombre: "Martin", edad: 25},
-    {nombre: "Agustin", edad: 26},
-    {nombre: "Javiera", edad: 58},
-]
-
-console.log(PERSONAS)
-
-//FOR OF
-for (const personaObjectos of PERSONAS){
-    console.log(personaObjectos.nombre);
-}
-*/
-
-//FUNCIONES DE ORDEN SUPERIOR 1
-//Abstracción
-/*
-function sumar (a, b){
-    return a + b
-}
-let resultado = sumar (10,3);
-console.log(resultado)
-
-function mayorQue(x){
-    return(num) => num > x;
-}
-const mayorQueDiez = mayorQue(10);
-const mayorQueVeinte = mayorQue(20);
-console.log(mayorQueDiez(11))
-*/
-
-//funciones que poseen funciones
-/*
-function asignacionOperacion(operacion){
-    if(operacion === "sumar"){
-        return function(num1, num2){
-            return num1 + num2
-        }
-    } else if(operacion === "restar") {
-        return (num1, num2) => num1 - num2;
-    }
-}
-
-let sumar = asignacionOperacion("sumar");
-let restar = asignacionOperacion("restar");
-
-console.log(sumar(4,6))
-*/
-
-//CALLBACK
-/*
-function porCadaUno(arr, fn){
-    for(const elemento of arr){
-        fn(elemento)
-    }
-}
-
-const numeros = [0, 1, 2, 3, 4];
-porCadaUno(numeros, console.log(elemento))
-*/
-
-/*
-function operar(num1, num2, operacion){
-    return operacion (num1, num2);
-}
-function suma(a, b){
-    return a + b
-}
-function restar(a, b){
-    return a - b
-}
-function multiplicar(a, b){
-    return a * b
-}
-console.log(operar(5, 3, suma));
-console.log(operar(10, 4, restar));
-console.log(operar(7, 6, multiplicar));
-*/
-
-//forEach
-/*
-const Albumes2 = ["Title", "Thank You", "Treat Myself"];
-
-for (let i = 0; i < letras.length; i++){
-    const elemento = letras [i];
-    console.log(elemento);
-}
-Albumes2.forEach(item => console.log(item));
-
-const number = [1, 2, 3, 4];
-number.forEach(function(number){
-    const resultado = number *2;
-    console.log(resultado);
-})
-*/
-
 
 const Taquilla = [
     {
@@ -654,16 +306,6 @@ const serch = (letra) =>{
 
 console.log(serch("Than"))
 
-
-//SOME
-/*
-const numeros = [1, 2, 3, 4, 20, 31, 45, 40];
-const numeroMayor = numeros.some(function(numeroArray){
-    return numeroArray >40
-})
-console.log(numeroMayor);
-*/
-
 //MAPS
 
 const productoss = [
@@ -687,25 +329,6 @@ const PRECIO_AUMENTADO = productoss.map(function(productoArray){
 })
 console.log(PRECIO_AUMENTADO);
 console.log(productoss);
-
-
-//REDUCE
-/*
-const total = [1, 2, 3, 4];
-let sum = 0 ;
-for(let i = 0; i < total.length; i++){
-    const elemento = total [i];
-    sum = sum + elemento;
-}
-console.log(sum);
-const totalFinal = total.reduce((sum, elemento) => sum + elemento, 0)
-console.log(totalFinal);
-
-const precioTotal = productos.reduce(function(acumulador, producto){
-    return acumulador + producto.precio;
-}, 0)
-console.log(precioTotal);
-*/
 
 //SORT
 
@@ -741,38 +364,6 @@ productos2.sort(function(a, b){
 
 console.log(productos2);
 
-//FUNCIONES DE ORDEN SUPERIOR 2
-//Propiedades
-/*
-console.log(Math.E);
-console.log(Math.PI);
-*/
-//MIN & MAX
-/*
-console.log( Math.max(20, 30, 10, 18, 2, 123));
-console.log( Math.min(44, 32, 1, 98, -4, 5));
-*/
-//Ceil, Floor & Round
-/*
-const pi = Math.PI
-
-//CEIL
-console.log( Math.ceil(pi))
-
-//FLOOR
-console.log( Math.floor(pi))
-
-//ROUND
-console.log( Math.round(pi))
-*/
-
-//Square Root
-/*
-Math.sqrt(15)
-Math.sqrt(8)
-Math.sqrt(1)
-Math.sqrt(-1)
-*/
 
 let potencia = Math.pow(2,3);
 console.log(potencia);
@@ -787,27 +378,6 @@ console.log(tng);
 console.log(Math.random()*10);
 
 console.log(Math.round(Math.random()*50 + 10));
-
-/*
-function LanzarDados(){
-    return Math.floor(Math.random()*5+1);
-}
-function simularElTiro(){
-    const LANZAR_LOS_DADOS = prompt("Queres lanzar los dados (si / no)")
-    if(LANZAR_LOS_DADOS === "si"){
-        let resultadoDado1 = LanzarDados();
-        let resultadoDado2 = LanzarDados();
-
-        console.log(`dado 1: ${resultadoDado1}`)
-        console.log(`dado 2: ${resultadoDado2}`)
-        console.log(`total: ${resultadoDado1 + resultadoDado2}`);
-    }else {
-        console.log("Fin del juego")
-    }
-}
-
-simularElTiro()
-*/
 
 //DATE
 let fechaActual = new Date();
@@ -869,3 +439,172 @@ console.log(queryId);
 const h1Elementos = document.getElementById('hElementos');
 h1Elementos.innerText = "MEGHAN TRAINOR";
 console.log(h1Elementos)
+
+//EVENTOS
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener('Click', function(){
+    alert('Se esta ejecutando el evento')
+})
+
+const cambiarColor = document.getElementById("cambiarColor");
+
+cambiarColor.addEventListener('Click', function(){
+    document.body.style.backgroundColor = 'blue';
+});
+
+const btnNodo = document.getElementById("btnNodo");
+
+//El evento es Click, ON
+btnNodo.onclick = function(){
+    alert('Se esta ejecutando el evento a traves de un nodo')
+}
+
+
+let menuBoton = document.getElementById("menuBoton");
+let menu = document.getElementById('menu')
+
+menuBoton.onclick = function(){
+    menu.style.display= (menu.style.display === 'block')? 'none' : 'block';
+};
+
+
+//eventos con raton => nos permite interactuar a traves del mouse con html
+
+const caja = document.getElementById("caja");
+
+//mouseover = se ejecuta cuanto estamos sobre elemento
+caja.onmouseover = ()=>{
+    console.log("ingreso el mouse")
+}
+
+//mouseout = se ejecuta cuando el mouse no esta sobre el elemento
+caja.addEventListener('mouseout', function(){
+    console.log("El mouse esta afuera de la caja")
+})
+
+//mousemove = va a detectar el movimiento del mouse sobre el elemento.
+
+caja.onmouseover= () =>{
+    console.log("Pasaste el mouse por la caja")
+}
+
+
+let enlace = document.getElementById("enlace");
+
+enlace.addEventListener('mousemove',function(){
+    alert ('Pasaste por encima')
+})
+
+
+//mousedown y mouseup = oprimen y sueltan el boton
+caja.onmousedown = function(){
+    console.log("Deja oprimido el boton")}
+
+caja.onmouseup= function(){
+    console.log("Suelta el mouse el mouse")
+}
+
+//eventos de teclado
+
+//keydown y keyup => cuando se presiona una tecla y cuando se deja soltar
+
+let campoTexto = document.getElementById('campoTexto');
+
+campoTexto.onkeydown = ()=>{
+    console.log('Presionaste una tecla KD')
+}
+campoTexto.onkeyup = ()=>{
+    console.log('Soltaste una tecla KP')
+}
+
+const pizarrita = document.getElementById("pizarrita");
+const contexto = pizarrita.getContext("2d");
+let dibujando = false;
+
+//evento mouse para dibujar
+
+pizarrita.addEventListener('mousedown',function(event){
+    dibujando = true;
+    dibujar(event.pageX - pizarrita.offsetLeft, event.pageY - pizarrita.offsetTop);
+
+});
+
+pizarrita.addEventListener('mousemove',function(event){
+    if(dibujando){
+        dibujar(event.pageX - pizarrita.offsetLeft, event.pageY - pizarrita.offsetTop);
+
+    }
+})
+
+pizarrita.addEventListener('mouseup',function(){
+    dibujando = false
+})
+
+function dibujar (x, y){
+    contexto.fillstyle= 'black';
+    contexto.fillRect(x,y,5,5);
+}
+
+let seleccion = document.getElementById('seleccion');
+let contenido = document.getElementById("contenido")
+
+seleccion.addEventListener('change',function(){
+    if(this.value === 'opcion1'){
+        contenido.textContent = 'se selecciono la opcion1'
+    } else if (this.value === "opcion2"){
+        contenido.textContent =" se selecciono la opcion2"
+    }
+})
+
+//JSON
+
+let saludar = localStorage.getItem("numero");
+let number = parseInt(saludar);
+console.log(typeof number);
+
+
+const modo = document.getElementById("modo");
+
+modo.addEventListener("click",()=>{
+    document.body.classList.toggle("dark");
+    if(document.body.classList.contains("dark")){
+        localStorage.setItem("modo","dark")
+    }else{
+        localStorage.setItem("modo","claro");
+    }
+})
+
+const bodyModo= localStorage.getItem("modo");
+
+if(bodyModo ==="dark"){
+    document.body.classList.add("dark");
+}
+else{
+    document.body.classList.remove("dark");
+}
+
+localStorage.setItem("saludo","buenas gente");
+
+localStorage.setItem("numero", 1234);
+
+localStorage.setItem("booleano", true);
+
+localStorage.removeItem('saludo');
+
+localStorage.clear();
+
+let persona = {nombre:"pedro", edad:25, ciudad:"mar del plata"};
+
+const personaJSON = JSON.stringify(persona);
+
+localStorage.setItem("persona", personaJSON);
+
+const usuarioEnElLocal = localStorage.getItem("persona");
+console.log(usuarioEnElLocal)
+
+//JSON.parse, convierte el JSON, de string a objeto. 
+
+const usuarioObjeto = JSON.parse(usuarioEnElLocal);
+console.log(usuarioObjeto);
