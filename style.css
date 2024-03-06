@@ -137,26 +137,3 @@ a{
 .social_link a:hover{
     background-color: rgb(232, 31, 98);
 }
-
-.navbar{
-    display: none;
-}
-
-#caja{
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
-}
-
-#pizarrita {
-    border: 2px solid red;
-    width: 400px;
-    height: 300px;
-}
-
-.claro{
-    background-color: lightblue;
-}
-.dark{
-    background-color: black;
-}
