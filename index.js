@@ -423,3 +423,197 @@ function programarTarea(){
 
 programarTarea();
 
+//DOM
+
+/*
+const pId = document.getElementById('pId');
+console.log(pId);
+
+const pClass = document.getElementsByClassName('pClass');
+console.log(pClass);
+
+const li = document.getElementsByTagName("li");
+console.log(li);
+
+const querryTag = document.querySelector("span");
+console.log(querryTag);
+
+const querryClass = document.querySelector(".QuerryClass")
+console.log(querryClass);
+
+const querryId = document.querySelector("#QuerryId")
+console.log(querryId);
+
+const h1Elementos = document.getElementById("hElementos");
+
+h1Elementos.innerText = "VINILOS";
+console.log(h1Elementos);
+
+const contenedorSection = document.getElementById("contenedorSection")
+contenedorSection.innerHTML =   `
+                                <div>
+                                <h1>Card</h1>
+                                <p>TITLE</p>
+                                </div>
+`
+
+const crearElementos = document.getElementById("crearElementos");
+
+const parrafo = document.createElement("p");
+parrafo.innerText = "THANK YOU";
+parrafo.className = "ClaseJS"
+
+crearElementos.appendChild(parrafo);
+
+const parrafoList = document.getElementById("parrafoList");
+
+parrafoList.classList.add("Meghan");
+
+parrafoList.classList.remove("Meghan");
+
+parrafoList.classList.toggle("Meghan");
+
+const links = [
+    {text: "Inicio", url: "../index.html"},
+    {text: "Elementos", url: "./elementos.html"},
+    {text: "Componentes", url: "./componentes.html"},
+]
+
+const navBar = document.getElementById("navBar")
+
+links.forEach(link => {
+    const ancla = document.createElement('a');
+    ancla.textContent = link.text;
+    ancla.href = link.url;
+    navBar.appendChild(ancla);
+})
+*/
+
+//EVENTOS
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener('click', function(){
+    alert('Se está ejecutando')
+})
+
+const cambiarColor = document.getElementById('cambiarColor');
+
+cambiarColor.addEventListener('click', function(){
+    document.body.style.backgroundColor = 'pink';
+});
+
+const btnNodo = document.getElementById("btnNodo");
+
+btnNodo.onclick = function(){
+    alert('Se está ejecutando un Nodo');
+}
+
+let menuBoton = document.getElementById("menuBoton");
+let menu = document.getElementById('menu');
+
+menuBoton.onclick = function(){
+    menu.style.display = (menu.style.display === 'block')? 'none' : 'block';
+};
+
+function jsEnHTMl(){
+    alert("Este evento está corriendo en HTML")
+}
+
+const caja = document.getElementById("caja");
+
+caja.onmouseover = ()=>{
+    console.log("Ingreso el mouse")
+}
+
+caja.addEventListener('mouseout', function(){
+    console.log("El mouse está afuera")
+})
+
+let enlace = document.getElementById("enlace");
+
+enlace.addEventListener('mouseover', function(){
+    alert('Pasaste por encima de la caja')
+})
+
+caja.onmousedown = function(){
+    console.log("Dejo de oprimir el boton")
+}
+
+caja.onmouseup = function(){
+    console.log("Soltaste el mouse")
+}
+
+let campoTexto = document.getElementById('campoTexto');
+
+campoTexto.onkeydown = ()=> {
+    console.log('Presionaste una tecla KD')
+}
+
+campoTexto.onkeyup = ()=> {
+    console.log('Soltaste una tecla KD')
+}
+
+const pizarrita = document.getElementById("pizarrita");
+const contexto = pizarrita.getContext("2d");
+let dibujando = false;
+
+pizarrita.addEventListener('mousedown', function(event){
+    dibujando = true;
+    dibujar(event.pageX - pizarrita.offsetLeft, event.pageY - pizarrita.offsetTop);
+});
+
+pizarrita.addEventListener('mousemove', function(event){
+    if(dibujando){
+        dibujar(event.pageX - pizarrita.offsetLeft, event.pageY - pizarrita.offsetTop);
+    }
+})
+
+pizarrita.addEventListener('mouseup', function(){
+    dibujando = false;
+})
+
+function dibujar (x, y){
+    contexto.fillsyle = 'black'
+    contexto.fillRect(x, y, 5, 5);
+}
+
+document.addEventListener('keydown', function(event){
+    if(event.key === "delete"){
+        contexto.clearRect(0, 0, pizarrita.clientWidth, pizarrita.clientHeight)
+    }
+})
+
+let nombreInput = document.getElementById("nombre");
+let apellidoInput = document.getElementById("apellido");
+let emailInput = document.getElementById("email");
+let emailError = document.getElementById("emailError");
+
+emailInput.addEventListener('input', function(){
+    if(!this.validity.valid){
+        emailError.style.display = 'block';
+    } else{
+        emailError.style.display = 'none';
+    }
+})
+
+let registroForm = document.getElementById("registroForm");
+
+registroForm.addEventListener ("submit", function(event){
+    event.preventDefault();
+    if(!nombreInput.validity.valid || !apellidoInput.validity.valid || !emailInput.validity.valid){
+        if(!nombreInput.validity.valid){
+            alert("Ingresa tu nombre bien por favor")
+        }
+        if(!apellidoInput.validity.valid){
+            alert("Ingresa tu apellido bien por favor")
+        }
+        if(!emailInput.validity.valid){
+            emailError.style.display = "block";
+            alert("Ingresa tu mail bien por favor")
+        }
+    }else{
+        alert("Registro aprobado")
+    }
+    
+})
